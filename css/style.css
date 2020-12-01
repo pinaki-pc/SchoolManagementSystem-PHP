@@ -1,0 +1,556 @@
+*{ margin: 0; padding: 0;box-sizing: border-box; font-family: 'Poppins', sans-serif; 
+	scroll-behavior: smooth;
+}
+
+a{text-decoration: none;}
+
+a:hover{text-decoration: none;}
+
+p{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #606060;
+}
+
+li{list-style: none;}
+
+.extra_div h2, .servicediv h2{
+	font-size: 1rem;
+	margin: 20px 0 15px 0;
+	line-height: 1.1;
+	word-spacing: 4px;
+}
+i{
+	color: #2fccd0;
+}
+
+/* ***********************  actual css start  ***************************** */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ .header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)),url('../images/background-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+	position: relative;
+}
+.header:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	opacity: 0.3;
+	z-index: -1;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9fc 40%);
+}
+
+.navbar:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	opacity: 0.5;
+	z-index: -1;
+	background: linear-gradient(to left, #00abff 0%, #00abff 100%);
+}
+.nav-item a{
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.header-section{
+	width: 100%;
+	height: 100vh;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.header_buttons a{
+	border: 1px solid #fff;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #fff;
+	font-size:  1.3rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+}
+.header_buttons a:hover{
+	color: #50d1c0;
+	background: #fff;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	transition: 0.3s ease-in;
+}
+.hero{
+	font-size: 4.8rem;
+}
+
+/* .change:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+	0%{content: "Programming";}
+	100%{content: "IT";}
+} */
+
+.center-div p{
+	font-size: 1.3rem;
+	padding: 10px 0 20px 0;
+	color: white;
+}
+
+/* ****************** extra div start *********************** */
+.header_extradiv{
+	width: 100%; height: auto;
+	margin: 100px 0;
+	text-align: center;
+}
+.extra_div{
+	background: #fff;
+	border: medium none;
+	padding: 50px !important;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+.extra_div:hover{
+	/* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+	transform: translateY(-20px);
+
+}
+
+
+/* ****************** extra div end *********************** */
+
+
+
+/* ****************** service offer  start *********************** */
+.serviceoffers{
+	background: #f7f7f9;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+.headings{
+	margin-bottom: 50px;
+}
+.headings h1{
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.names h1	{
+	color: 	#2e2e2e;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.serviceicons{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+
+}
+.progress{
+	height: 0.6rem!important;
+	margin-bottom: 25px!important;
+	background: #606060;
+}
+/* ****************** service offer  start *********************** */
+
+/* ****************** awards won  start *********************** */
+
+	.project_work{margin:100px 0;}
+
+	.project_work h1{
+		font-size: 2rem;
+			text-align: center;
+	}
+	
+
+/* ****************** awards won  end *********************** */
+
+/* ****************** PRICING START *********************** */
+
+	.pricing{
+		width: 100%;
+		height: 100vh;
+		padding: 50px;
+		position: relative;
+	}
+
+	.pricing:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	z-index: -1;
+	background: linear-gradient(160deg, #16c9fc 55%, #fff 0%);
+}
+
+.money{
+	font-size: 40px;
+	line-height: 1;
+	color: #606060;
+}
+.card{
+	transition: 0.4s ease;
+}
+.card-header{
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: #fff!important;
+	padding: 25px 9px!important;
+}
+.card-body{
+	padding: 30px 0px!important;
+}
+
+.card-body{
+	margin: 10px 0px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #606060;
+}
+.card-footer{
+	background: white!important;
+	padding: 30px 0px!important;
+}
+
+.card-footer a{
+	border: 1px solid #50d1c0;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #50d1c0;
+	font-size:  1.3rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+}
+ .card:hover .card-footer a{
+	color: #fff;
+	background: #50d1c0;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	transition: 0.3s ease-in;
+}
+
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover .card-header, .card:hover .money{
+	color: #50d1c0;
+}
+.card-default{
+	transform: translateY(-18px);
+}
+
+/* ****************** PRICING END *********************** */
+
+/* ****************** cusromer feedback start *********************** */
+
+.happuclints{
+	width: 100%;
+	height: 100vh;
+	padding: 80px 0;
+}
+.box{
+	height: 100%;
+	text-align: center;
+	border:  1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+	transition: 0.3s ease;
+}
+.box:hover{
+	background: rgba(22, 201, 246, 0.4);
+	transform: translateY(-2px);
+}
+
+.box:hover p{
+	color: black;
+}
+
+.carousel-indicators{
+	position: absolute;
+	right: 0;
+	bottom: -60px!important;
+}
+.carousel-indicators li{
+	background-color: #16c9f6!important;
+} 
+
+.box a{
+	position: relative;
+}
+.box a img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+
+.box a:after{
+	content: "\f10d";
+	font-family: FontAwesome;
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+	color: white;
+	position: absolute;
+	top: 120%;
+	left: 70%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box h1{
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 10px;
+}
+.box h2{
+	font-size: 13px;
+	font-weight: 400;
+	color: #666666;
+	margin-bottom: 20px;
+}
+/* ****************** cusromer feedback END *********************** */
+/* ****************** contact us  start *********************** */
+.contactus{
+	width: 100%;
+	height: 100vh;
+	padding: 80px 0;
+	position: relative;
+}
+.contactus:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+	z-index: -1;
+}
+
+.form_button button{
+	border: 1px solid #50d1c0;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #50d1c0;
+	font-size:  1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	background: transparent;
+}
+.form_button button:hover{
+	border: none;
+}
+form:hover .form_button button{
+	background: #fff;
+	color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder{
+	font-size: 0.85rem;
+}
+
+/* ****************** contact us  END *********************** */
+
+/* ****************** newsletter  start *********************** */
+.newsletter{
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+}
+
+.email-input{
+	min-width: 150px;
+	min-height: 45px;
+	border-radius: 100px 0 0 100px!important;
+}
+.input-group-text{
+	border-radius: 0 100px 100px 0!important;
+	background: #5bc0de!important;
+	color: #fff!important;
+	min-width: 130px;
+	min-height: 45px;
+}
+.input-group:hover{
+	transform: translateY(-3px);
+	transition: 0.3s ease-in;
+}
+
+/* ****************** newsletter  end *********************** */
+
+/* ****************** footer  start *********************** */
+
+
+.footerarea a{
+	text-decoration: none;
+}
+.footerarea{
+	width: 100%;
+	height: auto;
+	padding: 70px 0 20px 0;
+	background: #00abff!important;
+	position: relative;
+}
+.footerarea p {
+	color: #fff; 
+	letter-spacing: 0.5px;
+}
+.footerarea li a{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+}
+.copyright a:hover, .copyright a{
+	color: #fff;
+	/* box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3); */
+}
+.copyright i{
+	color: #fff;
+}
+.footerarea h3{
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 25px;
+	font-weight: 600;
+	font-size: 1.2rem!important;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.contact-info h4{
+	text-transform: capitalize;
+	color: #fff;
+	margin: 10px 0;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+.contact-info p{
+	font-weight: 600;
+}
+.contact-info .mobile-no{
+	font-weight: 600;
+	font-size: 1.7rem;
+}
+.contact-info i{
+	color: white;	
+}
+.footerarea .heading-contact{
+	font-size: 1.5rem!important;
+}
+.call-time{
+	font-size: 1rem;
+}
+.hr{
+	color: white;
+	height: 3px;
+}
+
+#myBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 1000;
+	border: none;
+	color: white;
+	background: #00abff;
+	padding: 10px;
+	border-radius: 10px;
+}
+#myBtn:hover{
+	background: #606060;
+	transition: 0.6s ease;
+}
+/* ****************** footer  end *********************** */
+
+
+/* media queries */
+
+@media(max-width: 768px){
+	.nav-item{
+		text-align: center!important;
+	}
+	.pricing, .happuclints, .contactus{
+		height: auto;
+		margin-top: 50px;
+	}
+	.card-second, .card-first{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.contactus p{
+		padding :0 50px;
+	}
+	.footer-div:nth-child(2){
+		text-align: left!important;
+	}
+	.footer-div{
+		margin: 30px 0;
+	}
+}
+@media(max-width: 992px){
+	.nav-item{
+		text-align: center!important;
+	}
+	.pricing, .happuclints, .contactus{
+		height: auto;
+		margin-top: 50px;
+	}
+	.card-second, .card-first{
+		transform: translateY(0px);
+		margin: 30px 0;
+	}
+	.contactus p{
+		padding :0 50px;
+	}
+	.footer-div:nth-child(2){
+		text-align: left!important;
+	}
+	.footer-div{
+		margin: 30px 0;
+	}
+}
